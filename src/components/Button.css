@@ -1,14 +1,33 @@
 /* Variáveis. Começam com -- dentro de :root */
 :root {
   --bg-button: #f0f0f0;
+  --bg-button-hover: #a8a8a8;
   --border-button: solid 1px #888;
+
 }
 
 .button {
   font-size: 1.4em;
   background-color: var(--bg-button);
   border: none;
-  border-right: var(--border-button);
-  border-bottom: var(--border-button);
+  /* border-right: var(--border-button); */
+  /* border-bottom: var(--border-button); */
   outline: none;
+  margin: 2px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--bg-button-hover);
+  transition: 0.3s;
+}
+
+.span3 {
+  grid-column: span 3;
+}
+
+.span2 {
+  grid-column: span 2;
 }
