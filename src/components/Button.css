@@ -1,7 +1,8 @@
 /* Variáveis. Começam com -- dentro de :root */
 :root {
   --bg-button: #f0f0f0;
-  --bg-button-hover: #a8a8a8;
+  --bg-button-hover: #d2d2d2;
+  --bg-button-active: #a4a4a4;
   --border-button: solid 1px #888;
 
 }
@@ -24,10 +25,32 @@
   transition: 0.3s;
 }
 
-.span3 {
+.button:active {
+  cursor: pointer;
+  background-color: var(--bg-button-active);
+  transition: 0.3s;
+}
+
+.button.span3 {
   grid-column: span 3;
 }
 
-.span2 {
+.button.span2 {
   grid-column: span 2;
+}
+
+.button.operation {
+  background-color: #f49352;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.button.operation:hover {
+  background-color: #f47826;
+  transition: 0.3s;
+}
+
+.button.operation:active {
+  background-color: #ec6912;
+  transition: 0.3s;
 }
